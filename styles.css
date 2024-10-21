@@ -1,0 +1,207 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgb(81, 205, 194)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    border-color: orangered !important;
+}
+.navbar-toggler 
+{
+    border-color: orangered;
+    color: orangered;
+    text-shadow: 0 0 10px orangered;
+}
+
+nav
+{
+    box-shadow: 0px 4px 10px orangered;
+    top: 0;
+}
+nav a
+{
+    color: orangered !important;
+    text-shadow: none !important;
+}
+nav span
+{
+    color: white !important;
+    text-shadow: none;
+}
+nav .nav-link:hover
+{
+    color: white !important;
+    background-color: orangered;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.navbar-nav .nav-link.active {
+    color: white !important;
+    background-color: orangered;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+#home
+{
+    padding-top: 80px;
+    height: 100vh;
+}
+#home p
+{
+    font-size: 25px !important;
+}
+#home h1
+{
+    font-size: 40px !important;
+}
+#home button
+{
+    background-color: orangered !important;
+    border: 2px solid orangered;
+    text-shadow: 0 0 10px orangered;
+}
+#home button:hover
+{
+    background-color: #000 !important;
+    color: orangered;
+    text-shadow: 0 0 10px orangered;
+}
+#home .image
+{
+    border-radius: 50%;
+    box-shadow:0px 0px 12px orangered;
+    text-shadow: 0 0 10px orangered;
+    overflow: hidden;
+    
+}
+#home .image , #about img ,#contact img
+{
+    max-width: 400px;
+}
+.typing-container {
+    height: 40px;
+    font-size: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid white;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+@media screen and (max-width : 700px)
+{
+    #home p , #about p
+    {
+        font-size: 18px !important;
+    }
+    #home h1 ,#about h1
+    {
+        font-size: 30px !important;
+    }
+    #home .image ,#about img
+    {
+        max-width: 300px;
+    }
+    #home
+    {
+        height: auto;
+    }
+}
+
+
+
+section {
+    padding: 20px;
+}
+
+h1, h2 {
+   color: orangered;
+   text-shadow: 0 0 10px orangered;
+}
+
+/* Skills grid */
+
+.skill-item, .service-item,.project-item {
+    background-color: #222;
+    box-shadow:0px 0px 8px orangered;
+    text-shadow: 0 0 10px orangered;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.skill-item img {
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+.project-item .image
+{
+    width: 100%;
+    height: 40%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.project-item img
+{
+    width: 100%;
+}
+.project-item img:hover
+{
+    transform: scale(1.2);
+    transition: 1s;
+}
+.project-item button
+{
+    background-color: orangered;
+    text-shadow: 0 0 10px orangered;
+    color: white !important;
+    border: 2px solid orangered;
+    text-shadow: 0 0 10px orangered;
+}
+.project-item button:hover
+{
+    background-color: transparent;
+    color: orangered !important;
+    border: 2px solid orangered;
+    text-shadow: 0 0 10px orangered;
+}
+/* Contact form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #fff;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: orangered;
+    text-shadow: 0 0 10px orangered;
+    border: none;
+    cursor: pointer;
+    color: #000;
+    border-radius: 10px;
+}
