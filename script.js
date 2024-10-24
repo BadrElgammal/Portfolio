@@ -36,7 +36,7 @@ function typeAndEraseText() {
 window.onload = typeAndEraseText;
 
 
-// تحديد الأقسام والروابط
+
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 
@@ -64,6 +64,6 @@ window.addEventListener('scroll', () => {
 
 window.addEventListener('scroll',function()
 {
-    
+
 })
 
