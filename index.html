@@ -5,25 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <!-- Header Section -->
-    <header class=""> 
+    <header> 
         <nav class="navbar navbar-expand-lg navbar-dark bg-black position-fixed vw-100 z-3">
             <div class="container">
               <h2><span>Port</span>folio</h2>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
                   <a class="nav-link" href="#home">Home</a>
                   <a class="nav-link" href="#about">About</a>
                   <a class="nav-link" href="#skills">Skills</a>
                   <a class="nav-link" href="#services">Services</a>
+                  <a class="nav-link" href="#projects">Projects</a>
                   <a class="nav-link" href="#contact">Contacts</a>
                 </div>
               </div>
@@ -32,181 +33,321 @@
     </header>
 
 
-    <section id="home" class="container d-flex align-items-center justify-content-around flex-wrap" data-aos="fade-left">
-        <div class="text col-12 col-md-6 col-xl-4 col-sm-6 mb-4" data-aos="fade-left"> 
+    <!-- Home Section -->
+    <section id="home" class="container d-flex align-items-center justify-content-around flex-wrap" style="padding-top: 120px; min-height: 100vh;">
+        <div class="text col-12 col-md-6 col-xl-4 col-sm-6 mb-4" data-aos="fade-right" data-aos-duration="1000"> 
             <p>Hello, I'm</p>
             <h1>Badr Hassan Elgammal</h1>
             <div class="typing-container">
                 <p class="typing-text"></p>
             </div>
-            <a href="./Badr_Elgammal_Cv.pdf" download ><button class="btn btn-primary download-cv">Download CV</button></a>
-            
+            <a href="./Badr_Elgammal CV.pdf" download><button class="btn btn-primary download-cv">Download CV</button></a>
         </div>
-        <div class="image col-12 col-md-6 col-xl-4 col-sm-6 text-center " data-aos="fade-right"> 
+        <div class="image col-12 col-md-6 col-xl-4 col-sm-6 text-center" data-aos="fade-left" data-aos-duration="1000"> 
             <img src="./images/صورة واتساب بتاريخ 1446-06-22 في 12.36.50_936a9d27.jpg" class="img-fluid" alt="">
         </div>
     </section>
     
 
-    <!-- About Section -->
-    <section id="about" class="d-flex flex-column align-items-center justify-content-evenly flex-wrap pt-3">
-        <h1 class="text-center  my-5" data-aos="fade-right">About Me</h1>
-        <div class="aboutText d-flex align-items-center justify-content-around flex-wrap">
-            <img data-aos="fade-right" class="col-12 col-md-6 col-xl-4 col-sm-6 mb-3" src="./images/vecteezy_cartoon-character-with-the-desk-working-concept-illustration_44428139.png" alt="">
-            <div class="text col-12 col-md-6 col-xl-4 col-sm-6 " data-aos="fade-left">
-                <h1>My Name : </h1>
-                <h1>Badr Elgammal</h1>
-                <p>Skilled web developer focusing on both front-end and back-end development. Proficient in HTML, CSS, bootstrap, JavaScript, Angular, C#, and SQL Server. Adept at problem-solving and delivering innovative solutions to complex challenges. With comprehensive knowledge of Angular for front-end development and strong proficiency in C# and SQL Server for back-end development, I bring a well-rounded approach to building effective and scalable web applications.</p>
-            </div>
+ <section id="about" class="d-flex flex-column align-items-center justify-content-evenly flex-wrap pt-5">
+    <h1 class="text-center my-5" data-aos="fade-up" data-aos-duration="800">About Me</h1>
+    
+    <div class="aboutText d-flex align-items-center justify-content-around flex-wrap">
+        <img class="col-12 col-md-6 col-xl-4 col-sm-6 mb-3" src="./images/vecteezy_cartoon-character-with-the-desk-working-concept-illustration_44428139.png" alt="Badr Elgammal" data-aos="fade-right" data-aos-duration="1000">
+        
+        <div class="text col-12 col-md-6 col-xl-4 col-sm-6" data-aos="fade-left" data-aos-duration="1000">
+            
+            <h3 class="mb-4" style="font-weight: 700;">
+                Full Stack Developer <span class="highlight">|</span> .NET & Angular
+            </h3>
+
+            <p class="mb-3" style="line-height: 1.8;">
+                I’m a software developer who loves turning complex ideas into reality. 
+                Specializing in the <span class="highlight">.NET ecosystem</span> and <span class="highlight">Angular</span>, 
+                I handle the entire development lifecycle—from designing efficient <span class="highlight">SQL databases</span> 
+                to crafting responsive, interactive user interfaces.
+            </p>
+
+            <p style="line-height: 1.8;">
+                Having led development teams in challenging projects, I understand the importance of 
+                <span class="highlight">collaboration</span> and <span class="highlight">code quality</span>. 
+                My goal is simple: to build high-performance software that leaves a lasting impact.
+            </p>
+
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Skills Section -->
-    <section id="skills" class="text-center pt-3">
-        <h1 class="my-5" data-aos="fade-left">Skills</h1>
+    <section id="skills" class="text-center pt-5">
+        <h1 class="my-5" data-aos="fade-up" data-aos-duration="800">Skills</h1>
         <div class="skills-grid row justify-content-center">
-            <!-- Skill Item -->
-            <div class=" col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="fade-right">
+
+            <div class="col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="zoom-in" data-aos-duration="600">
                 <div class="skill-item">
                     <img src="./images/Logo_HTML_no_bg.png" alt="HTML">
                     <h3>HTML</h3>
                 </div>
             </div>
-            <div class=" col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="fade-right">
+
+            <div class="col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
                 <div class="skill-item">
-                    <img src="./images/Logo_CSS_no_bg.png" alt="HTML">
+                    <img src="./images/Logo_CSS_no_bg.png" alt="CSS">
                     <h3>CSS</h3>
                 </div>
             </div>
-            <div class=" col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="fade-left">
+
+            <div class="col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
                 <div class="skill-item">
-                    <img src="./images/logo_JavaScript-removebg-preview.png" alt="HTML">
-                    <h3>Java Script</h3>
+                    <img src="./images/logo_JavaScript-removebg-preview.png" alt="JavaScript">
+                    <h3>JavaScript</h3>
                 </div>
             </div>
-            <div class=" col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="fade-left">
+
+            <div class="col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
                 <div class="skill-item">
-                    <img src="./images/Logo_Bootstrap-removebg-preview.png" alt="HTML">
+                    <img src="./images/Logo_Bootstrap-removebg-preview.png" alt="Bootstrap">
                     <h3>Bootstrap</h3>
                 </div>
             </div>
-            <div class=" col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="fade-right">
+
+            <div class="col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="400">
                 <div class="skill-item">
-                    <img src="./images/Logo_Angular-removebg-preview.png" alt="HTML">
+                    <img src="./images/Logo_Angular-removebg-preview.png" alt="Angular">
                     <h3>Angular</h3>
                 </div>
             </div>
-            <div class=" col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="fade-right">
+
+            <div class="col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="500">
                 <div class="skill-item">
-                    <img src="./images/C_-removebg-preview.png" alt="HTML">
+                    <img src="./images/C_-removebg-preview.png" alt="C#">
                     <h3>C#</h3>
                 </div>
             </div>
-            <div class=" col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="fade-left">
+
+            <div class="col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="600">
                 <div class="skill-item">
-                    <img src="./images/sql-removebg-preview.png" alt="HTML">
-                    <h3>SQL server</h3>
+                    <img src="./images/sql-removebg-preview.png" alt="SQL Server">
+                                        <h3>SQL Server</h3>
                 </div>
             </div>
-            <!-- Add more skill items -->
+
+            <div class="col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="700">
+                <div class="skill-item">
+                    <img src="./images/Linq_Logo-removebg-preview.png" alt="LINQ">
+                    <h3>LINQ</h3>
+                </div>
+            </div>
+
+            <div class="col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="800">
+                <div class="skill-item">
+                    <img src="./images/Entity_FrameWorke_Core_Logo-removebg-preview.png" alt="Entity Framework">
+                    <h3>Entity FrameWork</h3>
+                </div>
+            </div>
+
+            <div class="col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="900">
+                <div class="skill-item">
+                    <img src="./images/MVC_Logo-removebg-preview (1).png" alt="ASP.NET MVC">
+                    <h3>Asp.Net MVC</h3>
+                </div>
+            </div>
+
+            <div class="col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="1000">
+                <div class="skill-item">
+                    <img src="./images/Asp.Net.png" alt="ASP.NET API">
+                    <h3>Asp.Net API</h3>
+                </div>
+            </div>
+
         </div>
     </section>
+
 
     <!-- Services Section -->
-    <section id="services" class="pt-3">
-        <h1 class="text-center my-5" data-aos="fade-right">Services</h1>
+    <section id="services" class="pt-5">
+        <h1 class="text-center my-5" data-aos="fade-up" data-aos-duration="800">Services</h1>
         <div class="services-grid justify-content-center text-center row">
-            <!-- Service Item -->
-            <div class="col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="fade-right">
+
+            <div class="col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="fade-up" data-aos-duration="800">
                 <div class="service-item">
-                    <h3> Web Development. </h3>
-                    <p>Developing, programming, and maintaining websites and web applications that meet modern standards and business needs.
-                        Examples: Responsive websites, API integration, PWA development.</p>
+                    <h3>Web Development</h3>
+                    <p>Developing, programming, and maintaining websites and web applications that meet modern standards and business needs. Examples: Responsive websites, API integration, PWA development.</p>
                 </div>
             </div>
-            <div class="col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="fade-right">
+
+            <div class="col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                 <div class="service-item">
                     <h3>Creative Websites</h3>
-                    <p>Building innovative and interactive websites that capture users' attention through engaging design and animations.
-                        Examples: Interactive animations, micro-interactions, creative portfolios.</p>
+                    <p>Building innovative and interactive websites that capture users' attention through engaging design and animations. Examples: Interactive animations, micro-interactions, creative portfolios.</p>
                 </div>
             </div>
-            <div class="col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="fade-left">
+
+            <div class="col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                 <div class="service-item">
                     <h3>Idea Websites</h3>
-                    <p>Turning ideas into functional websites by aligning the design and features with the client's vision and business goals.
-                        Examples: Custom landing pages, niche websites.</p>
+                    <p>Turning ideas into functional websites by aligning the design and features with the client's vision and business goals. Examples: Custom landing pages, niche websites.</p>
                 </div>
             </div>
-            <div class="col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="fade-left">
+
+            <div class="col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                 <div class="service-item">
                     <h3>Modifications</h3>
-                    <p>Updating and enhancing existing websites to fix bugs, improve features, or refresh the design.
-                        Examples: Code refactoring, performance optimization.</p>
+                    <p>Updating and enhancing existing websites to fix bugs, improve features, or refresh the design. Examples: Code refactoring, performance optimization.</p>
                 </div>
             </div>
-            <div class="col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="fade-right">
+
+            <div class="col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                 <div class="service-item">
                     <h3>Support Services</h3>
-                    <p>Providing ongoing maintenance and technical support to ensure the website runs smoothly.
-                        Examples: Troubleshooting, uptime monitoring, issue resolution</p>
+                    <p>Providing ongoing maintenance and technical support to ensure the website runs smoothly. Examples: Troubleshooting, uptime monitoring, issue resolution.</p>
                 </div>
             </div>
-            <!-- Add more service items -->
+
         </div>
     </section>
+
 
     <!-- Projects Section -->
-    <section id="projects" class="pt-4 ">
-        <h1 class=" text-center my-5" data-aos="fade-right">Projects</h1>
+    <section id="projects" class="pt-5">
+        <h1 class="text-center my-5" data-aos="fade-up" data-aos-duration="800">Projects</h1>
         <div class="projects-grid row justify-content-center text-center">
-            <!-- Project Item -->
-            <div class="col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="fade-right">
+
+            <div class="col-12 col-xl-4 col-md-4 col-sm-6 p-3" data-aos="fade-up" data-aos-duration="800">
                 <div class="project-item">
-                    <a href="https://jfc-rho.vercel.app"><div class="image"><img src="./images/Project 1.png" alt="Project 1"></div></a>
+                    <a href="https://jfc-rho.vercel.app">
+                        <div class="image"><img src="./images/Project 1.png" alt="Project 1" class="img-fluid"></div>
+                    </a>
                     <h3>JFC</h3>
-                    <a href="https://jfc-rho.vercel.app"><button class="btn ms-auto">View Now</button></a>
+                    <a href="https://jfc-rho.vercel.app"><button class="btn btn-primary">View Now</button></a>
                 </div>
             </div>
-            <div class="col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="fade-right">
+
+            <div class="col-12 col-xl-4 col-md-4 col-sm-6 p-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                 <div class="project-item">
-                    <a href="https://restorant-tau.vercel.app"><div class="image"><img src="./images/project 2 (2).png" alt="Project 1"></div></a>
-                    <h3> French Restorant</h3>
-                    <a href="https://restorant-tau.vercel.app"><button class="btn ms-auto">View Now</button></a>
+                    <a href="https://restorant-tau.vercel.app">
+                        <div class="image"><img src="./images/project 2 (2).png" alt="Project 2" class="img-fluid"></div>
+                    </a>
+                    <h3>French Restorant</h3>
+                    <a href="https://restorant-tau.vercel.app"><button class="btn btn-primary">View Now</button></a>
                 </div>
             </div>
-            <div class="col-12 col-xl-3 col-md-4 col-sm-6 p-3" data-aos="fade-left">
+
+            <div class="col-12 col-xl-4 col-md-4 col-sm-6 p-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                 <div class="project-item">
-                    <a href="https://jfc-rho.vercel.app"><div class="image"><img src="./images/Screenshot 2024-10-22 194837.png" alt="Project 1"></div></a>
+                    <a href="https://foodtuck-eight.vercel.app/">
+                        <div class="image"><img src="./images/Screenshot 2024-10-22 194837.png" alt="Project 3" class="img-fluid"></div>
+                    </a>
                     <h3>Foodtuck</h3>
-                    <a href="https://foodtuck-eight.vercel.app/"><button class="btn ms-auto">View Now</button></a>
+                    <a href="https://foodtuck-eight.vercel.app/"><button class="btn btn-primary">View Now</button></a>
                 </div>
             </div>
-            <!-- Add more project items -->
+             <div class="col-12 col-xl-4 col-md-4 col-sm-6 p-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                <div class="project-item">
+                    <a href="https://handyhub.runasp.net/">
+                        <div class="image"><img src="./images/Screenshot 2025-12-25 173738.png" alt="Project 3" class="img-fluid"></div>
+                    </a>
+                    <h3>HandyHub</h3>
+                    <a href="https://handyhub.runasp.net/"><button class="btn btn-primary">View Now</button></a>
+                </div>
+            </div>
         </div>
     </section>
+
 
     <!-- Contact Section -->
-    <section id="contact" class="pt-3">
-        <h2 class="my-5 text-center" data-aos="fade-right">Contact</h2>
-        <div class="row align-items-center justify-content-around">
-            <form action="#" method="post" class="col-12 col-md-6 col-xl-4 col-sm-6 mb-3" data-aos="fade-left">
-                <h2 class="pb-4">Leave Me A Support Message</h2>
-                <input type="text" name="first_name" placeholder="First Name">
-                <input type="text" name="last_name" placeholder="Last Name">
-                <textarea name="message" placeholder="Your Message"></textarea>
-                <button type="submit">Enter Now</button>
-            </form>
-            <img data-aos="fade-right" class="col-12 col-md-6 col-xl-4 col-sm-6 mb-3" src="./images/vecteezy_ai-generated-young-man-studies-online-and-exploring_35895323.png" alt="">
-        </div>
-    </section>
+<section id="contact" class="pt-5 pb-5">
+    <h2 class="my-5 text-center" data-aos="fade-up" data-aos-duration="800">Contact</h2>
+    <div class="row align-items-center justify-content-around">
+        
+        <form id="contact-form" class="col-12 col-md-6 col-xl-4 col-sm-6 mb-3" data-aos="fade-right" data-aos-duration="1000">
+            
+            <h2 class="pb-4">Leave Me A Support Message</h2>
+            
+            <input type="text" name="first_name" placeholder="First Name" required>
+            <input type="text" name="last_name" placeholder="Last Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            
+            <button type="submit" class="btn btn-primary mt-3">Send Message</button>
+            
+            <p id="form-status" class="mt-3 fw-bold"></p>
+        </form>
+        
+        <img class="col-12 col-md-6 col-xl-4 col-sm-6 mb-3" src="./images/vecteezy_ai-generated-young-man-studies-online-and-exploring_35895323.png" alt="" data-aos="fade-left" data-aos-duration="1000">
+    </div>
+</section>
 
+
+<!-- EmailJS Library -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script>
+    // تفعيل EmailJS
+    emailjs.init("MImiyaSx5t2Pt57FC");
+
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('form-status');
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // تغيير الزر لـ Loading
+        const btn = form.querySelector('button');
+        btn.textContent = 'Sending...';
+        btn.disabled = true;
+
+        // إرسال الإيميل
+        emailjs.sendForm('service_qanbsil', 'template_v2opuxk', form)
+            .then(function() {
+                // نجاح
+                status.innerHTML = '✅ Message sent successfully!';
+                status.style.color = 'green';
+                form.reset();
+                btn.textContent = 'Send Message';
+                btn.disabled = false;
+            })
+            .catch(function(error) {
+                // فشل
+                status.innerHTML = '❌ Failed to send. Please try again.';
+                status.style.color = 'red';
+                btn.textContent = 'Send Message';
+                btn.disabled = false;
+                console.log('Error:', error);
+            });
+    });
+</script>
+
+
+    <!-- Footer (اختياري) -->
+    <footer class="text-center py-4 bg-black">
+        <p class="text-white mb-0">&copy; 2024 Badr Elgammal. All Rights Reserved.</p>
+    </footer>
+
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    
     <script>
+        // تفعيل AOS بالإعدادات الصحيحة
         AOS.init({
-          duration: 2000, // مدة الأنيميشن بالمللي ثانية
+            duration: 800,
+            offset: 50,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false,
+            anchorPlacement: 'top-bottom'
         });
-      </script>      
+
+        // إعادة تحديث AOS بعد تحميل الصفحة
+        window.addEventListener('load', function() {
+            AOS.refresh();
+        });
+    </script>
+
     <script src="./script.js"></script>
+
 </body>
 </html>

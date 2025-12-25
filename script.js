@@ -1,4 +1,4 @@
-const texts = ["Welcome to my Portfolio","I'm Front End Developer", "I'm Web Developer"];
+const texts = ["Welcome to my Portfolio","I'm Full Stack Developer", "I'm .Net Developer" , "I'm Web Developer" ];
 const typingSpeed = 100; 
 const eraseSpeed = 50; 
 const delayBetweenTexts = 1000; 

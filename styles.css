@@ -209,7 +209,7 @@ form input, form textarea {
     margin: 5px 0;
     background-color: #fff;
     border: none;
-    color: #fff;
+    color: black;
     border-radius: 10px;
 }
 
@@ -221,4 +221,9 @@ button {
     cursor: pointer;
     color: #000;
     border-radius: 10px;
+}
+
+.highlight {
+    color: #ff5722; /* نفس درجة البرتقالي بتاعتك */
+    font-weight: bold;
 }
